@@ -1,0 +1,398 @@
+html{
+	font-size: 10px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Signika Negative', sans-serif;
+	text-align: center;
+	/*line-height: 1.6;*/
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	line-height: 1.3;
+}
+
+img{
+	width: 100%;
+}
+
+input, select{
+	border:none;
+}
+
+input.input::placeholder {
+    color: #e9e9e9;
+    font-size: 18px;
+}
+
+.inputs select:invalid {
+    color: #e9e9e9;
+    font-size: 18px;
+}
+
+
+
+.cover, .courses, .services {
+	display: grid;
+	grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto auto;
+}
+
+.coverCont, .coursesCont, .servicesCont {
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.cover {
+	background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(170, 110, 125, 0.4), rgb(43, 43, 43, 0.7)), url();
+    background-size: cover;
+    font-size: 2rem;
+    color: white;
+    padding: 0 0 40px 0;
+}
+
+
+.coverCont .cover-form {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 8fr 1fr;
+    background-color: #808080b5;
+}
+
+.coverCont .form {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+    padding: 40px 0;
+    color: #fff;
+    font-size: 24px;
+    grid-row-gap: 15px;
+}
+
+.coverCont .inputs, .coverCont .select{
+	border-bottom:2px solid white;
+}
+
+.coverCont .inputs .input{
+	text-indent: 25px;
+}
+
+.coverCont .inputs select{
+	text-indent: 21px;
+}
+
+.coverCont .inputs .input{
+  	color: #fff;
+}
+
+select{
+	color: #fff;
+}
+
+.coverCont .inputs .input,
+.coverCont .inputs select {
+    width: 100%;
+    background: transparent;
+  	outline: none;
+  	font-size: 20px;
+  	padding: 5px 0;
+}
+
+.coverCont .inputs option{
+	background-color: #6a6766;
+}
+
+.coverCont .btns .btn{
+	width: 100%;
+    background: #fd5270;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.courses {
+	padding: 40px 0;
+}
+
+.coursesCont{
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px;
+}
+
+.coursesCont .labels {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+}
+
+.courses .details, .courses .objective {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+}
+
+.courses .title {
+	text-transform: uppercase;
+	font-weight: 800;
+    border-bottom: 2px solid blue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.courses .eligibility .title {
+    background-color: blue;
+    width: 100%;
+    color: white;
+    border-bottom: none;
+}
+
+.courses .text {
+	text-align: justify;
+	font-size: 18px;
+}
+
+.coursesCont .label {
+	background: #949494;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.coursesCont .label:hover {
+	color: #949494;
+	background-color: #fff;
+	border: 2px solid #949494;
+	cursor: pointer;
+}
+
+.courses .slide .top{
+   	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    padding: 30px 0;
+}
+
+.coursesCont .slide, .coursesCont input {
+	display: none;
+}
+
+#mba:checked ~ .slides .mba,
+#bba:checked ~ .slides .bba,
+#mca:checked ~ .slides .mca,
+#bca:checked ~ .slides .bca
+ {
+	display: grid;
+}
+
+.courses .objective ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-row-gap: 15px;
+}
+
+.slides ul li{
+	list-style-type: none
+}
+
+.courses .fees {
+	text-align: left;
+    font-size: 16px;
+    display: grid;
+    grid-row-gap: 15px;
+}
+
+.courses .online, .courses .installments {
+	display: grid; 
+	grid-template-columns: 1fr;
+}
+
+.courses .table {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px;
+}
+
+.courses .table .catagory:last-child, 
+.courses .table .data:last-child{
+	border-bottom: 2px solid #b9aaaa;
+}
+
+.courses .table .catagory, 
+.courses .table .data, 
+.courses .table .installment {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #b9aaaa;
+    border-bottom: 0;
+}
+
+.courses .slide {
+	grid-row-gap: 20px;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 20px;
+}
+
+.courses .eligibility {
+    border-radius: 3px;
+    border-radius: 5px;
+    display: grid;
+    grid-row-gap: 15px;
+    padding: 15px;
+    justify-items: center;
+    border: 1px solid;
+}
+
+.services {
+	background-color: #e1e1e1;
+	padding: 40px 0;
+}
+
+
+.services .items {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+}
+
+.services .item {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	align-items: center;
+    background: #ffffff;
+    box-shadow:	5px 5px 5px #7a7a7a;
+}
+
+.services .item .head {
+	align-items: center;
+    display: grid;
+    background-color: #7a7a7a;
+    height: 100%;
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.cover {
+		grid-template-columns: 5% 94% 1%;
+	}
+
+	.coverCont {
+		display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: 1fr;
+	}
+
+	.services .itema {
+		grid-template-columns: 1fr 1fr 1fr;
+		 grid-template-rows: 1fr;
+		 grid-column-gap: 15px;
+	}
+
+	.coursesCont .labels {
+    	grid-template-columns: repeat(8, 1fr);
+	}
+
+	.courses .fees{
+		text-align: center;
+	}
+
+	.courses .online {
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+
+	.courses .installments {
+		grid-template-columns: 1fr 4fr 1fr;
+	}
+
+	.courses .table .catagory div:first-child, 
+	.courses .table .data div:first-child, 
+	.courses .table .installment div:first-child{
+		border-right: 2px solid #b9aaaa;
+	}
+
+	.courses .table .catagory, 
+	.courses .table .data, 
+	.courses .table .installment  {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		border: 2px solid #b9aaaa;
+	    border-right: 0;
+	}
+
+	.courses .table .catagory:last-child, 
+	.courses .table .data:last-child, 
+	.courses .table .installment:last-child{
+		border-right: 2px solid #b9aaaa;
+	}
+
+	.courses .table .oneTime {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: 1fr;
+	}
+
+	.courses .table .oneTime .catagory{
+		grid-template-columns: 1fr;
+	}
+
+	.courses .table .installments {
+		display: grid;
+	    grid-template-columns: 1fr 4fr 1fr;
+	    grid-template-rows: 1fr;
+	}
+
+	.courses .table .tableDetail {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.courses .table .tableSub {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+    	grid-template-rows: 1fr;
+	}
+
+	.courses .table .catagory div:first-child, 
+	.courses .table .data div:first-child, 
+	.courses .table .installment div:first-child{
+		border-right: none;
+		border-bottom: 2px solid #b9aaaa;
+	}
+
+
+	.services .items {
+	    grid-template-columns: 1fr 1fr 1fr;
+	    grid-template-rows: 1fr;
+    	grid-column-gap: 15px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.courses .slide .top {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 20px;
+	}
+}
+
