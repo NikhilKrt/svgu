@@ -16,6 +16,10 @@ a{
 	text-decoration: none;
 }
 
+li {
+	list-style-type: none;
+}
+
 p{
 	line-height: 1.3;
 }
@@ -29,44 +33,107 @@ input, select{
 }
 
 input.input::placeholder {
-    color: #e9e9e9;
-    font-size: 18px;
-}
-
-.inputs select:invalid {
-    color: #e9e9e9;
+    color: #b3b3b3;
     font-size: 18px;
 }
 
 
 
-.cover, .courses, .services {
+.inputs select.dropdown:invalid {
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+.head {
+	font-size: 20px;
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.fas {
+    align-self: start;
+    padding: 11px 5px;
+    color: #dccb00;
+}
+
+.cover, .courses, .services, .legacy, .apply {
 	display: grid;
 	grid-template-columns: 5% 90% 5%;
     grid-template-rows: auto auto;
+    padding: 40px 0;
 }
 
-.coverCont, .coursesCont, .servicesCont {
+.coverCont, .coursesCont, .servicesCont,
+.legacyCont, .applyCont {
 	display: grid;
 	grid-column: 2;
 	grid-row: 2;
 }
 
 .cover {
-	background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(170, 110, 125, 0.4), rgb(43, 43, 43, 0.7)), url();
-    background-size: cover;
+	padding-top: 0; 
+    background: linear-gradient(to bottom, rgba(44, 67, 111, 0.4), rgba(40, 40, 50, 0.7));
     font-size: 2rem;
     color: white;
-    padding: 0 0 40px 0;
 }
 
+.headder .companyicon{
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    grid-column-gap: 10px;
+    grid-column: 1/ span 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    background: white;
+    z-index: 99;
+}
+
+.headder .companyicon img{
+	height: 70px;
+}
+
+.coverCont {
+	padding-top: 04px;
+}
 
 .coverCont .cover-form {
 	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 8fr 1fr;
-    background-color: #808080b5;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+    background-color: #fffffffc;
+}
+
+.coverCont .head {
+	align-self: center;
+	display: grid;
+	grid-row-gap: 50px;
+	padding: 12px 0;
+}
+
+.cover .head .coverHeading p:first-child {
+	font-size: 32px;
+} 
+.cover .head .coverHeading p:last-child {
+	font-size: 40px;
+    font-weight: 700;
+}
+
+.coverCont .details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+}
+
+.coverCont .detail {
+    background: #535b6d;
+    border-bottom: 2px solid #e6395a;
+    padding: 20px 10px;
 }
 
 .coverCont .form {
@@ -80,16 +147,22 @@ input.input::placeholder {
     grid-row-gap: 15px;
 }
 
+.coverCont .form .title {
+    color: #4b566a;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .coverCont .inputs, .coverCont .select{
 	border-bottom:2px solid white;
 }
 
 .coverCont .inputs .input{
-	text-indent: 25px;
+	text-indent: 15px;
 }
 
 .coverCont .inputs select{
-	text-indent: 21px;
+	text-indent: 11px;
 }
 
 .coverCont .inputs .input{
@@ -103,23 +176,34 @@ select{
 .coverCont .inputs .input,
 .coverCont .inputs select {
     width: 100%;
-    background: transparent;
-  	outline: none;
-  	font-size: 20px;
-  	padding: 5px 0;
+    border-bottom: 2px solid #d8d8d8;
+    outline: none;
+    font-size: 20px;
+    padding: 7px 0;
+    color: #3d3d3e;
 }
 
 .coverCont .inputs option{
-	background-color: #6a6766;
+	background-color: white;
+	color: blue;
 }
 
 .coverCont .btns .btn{
 	width: 100%;
-    background: #fd5270;
+    box-shadow: 2px 2px 7px 1px #b5b5b5;
+    background: #e6395a;
     color: white;
-    border: none;
+    font-weight: 700;
     padding: 10px 20px;
     font-size: 17px;
+    border: 2px solid #e6395a;
+}
+
+.coverCont .btns .btn:hover {
+	cursor: pointer;
+    color: #e6395a;
+    background-color: white;
+    box-shadow: 3px 3px 9px 1px #b5b5b5;
 }
 
 .courses {
@@ -143,22 +227,33 @@ select{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-row-gap: 15px;
 }
 
-.courses .title {
-	text-transform: uppercase;
-	font-weight: 800;
-    border-bottom: 2px solid blue;
-    text-align: center;
-    font-size: 20px;
+.courses .details, .courses .objective, 
+.courses .eligibility, .courses .fees {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
 }
 
-.courses .eligibility .title {
-    background-color: blue;
+.courses .text , .courses .ul, .courses .table {
+	padding: 10px;
+}
+
+.courses .title, .legacyCont .title {
+    text-transform: uppercase;
     width: 100%;
-    color: white;
-    border-bottom: none;
+    font-size: 26px;
+	background-color: #4b566a;
+    color: #dedede;
+    padding: 10px 0 10px 25px;
+    text-align: left;
+}
+
+.courses .eligibility .text {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	    text-align: left;
+    grid-row-gap: 20px;
 }
 
 .courses .text {
@@ -166,18 +261,22 @@ select{
 	font-size: 18px;
 }
 
-.coursesCont .label {
-	background: #949494;
+.coursesCont label {
     color: #fff;
-    border-radius: 20px;
-    padding: 8px;
+    padding: 10px 0;
+    width: 100%;
+	background-color: #e6395a;
+	border: 1px solid #e6395a;
+    border-radius: 1px;
+    box-shadow: 0 0 2px 0 grey;
 }
 
-.coursesCont .label:hover {
-	color: #949494;
-	background-color: #fff;
-	border: 2px solid #949494;
+.coursesCont label:hover, .coursesCont label:active {
 	cursor: pointer;
+	color: #e6395a;
+	background-color: #fff;
+	cursor: pointer;
+	box-shadow: 2px 2px 3px 0 grey;
 }
 
 .courses .slide .top{
@@ -185,7 +284,6 @@ select{
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-row-gap: 20px;
-    padding: 30px 0;
 }
 
 .coursesCont .slide, .coursesCont input {
@@ -200,6 +298,14 @@ select{
 	display: grid;
 }
 
+#mba:checked ~ .labels label[for="mba"],
+#bba:checked ~ .labels label[for="bba"],
+#mca:checked ~ .labels label[for="mca"],
+#bca:checked ~ .labels label[for="bca"] {
+	background: white;
+	color: blue;
+}
+
 .courses .objective ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -207,15 +313,15 @@ select{
     grid-row-gap: 15px;
 }
 
-.slides ul li{
-	list-style-type: none
-}
-
 .courses .fees {
 	text-align: left;
     font-size: 16px;
     display: grid;
     grid-row-gap: 15px;
+}
+
+.courses .tableHead, .courses .installment div:first-child {
+	border-right: 2px solid #b9aaaa;
 }
 
 .courses .online, .courses .installments {
@@ -227,6 +333,10 @@ select{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-row-gap: 20px;
+}
+
+.courses .table p {
+	line-height: 35px;
 }
 
 .courses .table .catagory:last-child, 
@@ -243,27 +353,23 @@ select{
     border-bottom: 0;
 }
 
+.courses .catagory .tableHead:last-child{
+	border-right: none;
+	border-left: none;
+}
+
 .courses .slide {
 	grid-row-gap: 20px;
-    box-shadow: 2px 2px 2px 2px grey;
+    box-shadow: 0px 0px 1px 0px #cacaca;
     padding: 20px;
 }
 
 .courses .eligibility {
-    border-radius: 3px;
-    border-radius: 5px;
+    border-radius: 0;
     display: grid;
     grid-row-gap: 15px;
-    padding: 15px;
     justify-items: center;
-    border: 1px solid;
 }
-
-.services {
-	background-color: #e1e1e1;
-	padding: 40px 0;
-}
-
 
 .services .items {
 	display: grid;
@@ -278,28 +384,97 @@ select{
 	grid-template-columns: 1fr;
 	align-items: center;
     background: #ffffff;
-    box-shadow:	5px 5px 5px #7a7a7a;
+    box-shadow:	2px 2px 3px #7a7a7a6b;
 }
 
 .services .item .head {
 	align-items: center;
     display: grid;
-    background-color: #7a7a7a;
+    background-color: #4b566a;
     height: 100%;
     color: white;
+}
+
+.services .item p {
+	line-height: 2.6;
+}
+
+.services .item .text {
+	font-size: 20px;
+}
+
+.apply {
+    background:linear-gradient(to bottom, rgba(86, 86, 86, 0.87), rgba(86, 86, 86, 0.8)), url(img/apply.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    color: white;
+}
+
+.applyCont .title {
+	font-size: 32px;
+}
+
+.applyCont .text {
+	font-size: 20px;
+}
+
+.legacyCont {
+    box-shadow: 2px 2px 2px 2px #b9b9b9;
+}
+
+.legacyCont .head {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+}
+
+.legacyCont .text{
+	padding: 20px;
+}
+
+.legacyCont ul {
+	text-align: justify;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 15px;
+	padding: 10px;
+}
+
+.legacyCont ul li {
+    padding: 12px;
+    font-weight: 200;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: 7% 97%;
+	grid-template-rows: 1fr;
+}
+
+.list .text {
+	padding: 0 10px;
 }
 
 
 @media screen and (min-width: 768px) {
 
 	.cover {
-		grid-template-columns: 5% 94% 1%;
+		grid-template-columns: 5% 94% 1%; 
+		background-repeat: no-repeat;
+    	background-image: url(img/cover.jpg);
 	}
 
 	.coverCont {
 		display: grid;
 	    grid-template-columns: 1fr 1fr;
 	    grid-template-rows: 1fr;
+	}
+
+	.coverCont .details {
+		grid-template-columns: 1fr 1fr 1fr;
+		padding-right: 20px;
 	}
 
 	.services .itema {
@@ -310,6 +485,7 @@ select{
 
 	.coursesCont .labels {
     	grid-template-columns: repeat(8, 1fr);
+        grid-column-gap: 25px;
 	}
 
 	.courses .fees{
@@ -322,6 +498,13 @@ select{
 
 	.courses .installments {
 		grid-template-columns: 1fr 4fr 1fr;
+	}
+
+	.courses .eligibility .text {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 5fr 1fr;
+		grid-column-gap: 20px;
 	}
 
 	.courses .table .catagory div:first-child, 
@@ -357,8 +540,24 @@ select{
 
 	.courses .table .installments {
 		display: grid;
-	    grid-template-columns: 1fr 4fr 1fr;
 	    grid-template-rows: 1fr;
+	}
+
+	.courses .mba .table .installments {
+		display: grid;
+	    grid-template-columns: repeat(6, 1fr);
+	    grid-template-rows: 1fr;
+	}
+
+
+	.courses .mba .table .installments{
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.courses .bba .table .installments,
+	.courses .bca .table .installments,
+	.courses .mca .table .installments{
+		grid-template-columns: repeat(8, 1fr);
 	}
 
 	.courses .table .tableDetail {
@@ -380,19 +579,50 @@ select{
 		border-bottom: 2px solid #b9aaaa;
 	}
 
+	.apply {
+		padding: 50px;
+	}
+
+	.applyCont {
+		display: grid;
+    	grid-template-columns: 1fr 4fr 1fr;
+	}
+
+	.applyCont .head{
+		grid-column: 2;
+	}
 
 	.services .items {
 	    grid-template-columns: 1fr 1fr 1fr;
 	    grid-template-rows: 1fr;
     	grid-column-gap: 15px;
 	}
+
+	.list {
+		grid-template-columns: 3% 97%;
+		align-items: center;
+	}
+
+	.fas {
+	    align-self: start;
+    	padding: 15px;
+	}
 }
 
 @media screen and (min-width: 992px) {
-	.courses .slide .top {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-column-gap: 20px;
+
+	.coverCont {
+		grid-template-columns: 60% 40%;
 	}
+
+	.courses .slide .top {
+		grid-column-gap: 30px;
+	}
+
+	.courses .slide .title {
+		text-align: left;
+		width: ;
+	}
+
 }
 

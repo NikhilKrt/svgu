@@ -7,7 +7,7 @@
     	<style type="text/css">
     		*{font-family:'Source Sans Pro', sans-serif}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:disc;}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{font-size:210%;}
     	</style>
-        <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
     	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     	<link href="https://fonts.googleapis.com/css?family=Courgette|Signika+Negative:300,400,600,700&display=swap" rel="stylesheet">
 
@@ -15,20 +15,31 @@
 
     </head>
     <body>
-
-        <section class="cover">
-            <div class="componyicon">
+        <section class="headder">
+            <div class="companyicon">
                 <div class="img">
                     <img src="img/logo.svg">       
                 </div>
             </div>
+        </section>
+
+        <section class="cover">
+            
             <div class="coverCont" >
                 <div class="head">
                     <div class="coverHeading">
-                        <p class=""></p>
+                        <p class="">Recognized by DEB - UGC - AICTE - AIU </p> <p>Ranked No. 1 Private University by DNA</p>
                     </div>
                     <div class="details">
-                        <p class=""></p>
+                        <div class="detail">
+                            <p class="">A Grade Accredited with NAAC</p>
+                        </div>
+                        <div class="detail">
+                            <p class="">Approved for Govt & Pvt Jobs</p>
+                        </div>
+                        <div class="detail">
+                            <p class="">Best E-Campus by AICTE Chairman</p>
+                        </div>
                     </div>
                 </div>
                 <div class="cover-form">
@@ -44,6 +55,7 @@
                             <label></label>
                             <input class="input" name="Email" type="email" placeholder="Email*" required="true">
                         </div>
+                        <input type="hidden" name="Source" id="source">
                         <div class="inputs">
                             <label></label>
                             <input class="input" name="Number"  pattern="[0-9]{10}"  type="text" placeholder="Phone Number*" required="true">
@@ -51,7 +63,40 @@
                         <div class="inputs">
                             <select class="dropdown __font08" name="State" required="true"> 
                                 <option class="" value="">Select State</option>
-                                <option class=""></option>
+                                <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option><option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhatisgarh">Chhatisgarh</option>
+                                <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+                                <option value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Orissa">Orissa</option>
+                                <option value="Pondicherry">Pondicherry</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttaranchal">Uttaranchal</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="West Bengal">West Bengal</option>
                             </select>
                         </div>
 
@@ -65,14 +110,19 @@
                         <div class="inputs">
                             <select class="dropdown __font08" name="Qualification" required="true"> 
                                 <option class="" value="">Select Qualification</option>
-                                <option class=""></option>
+                                <option value="Post Graduate">Post Graduate</option>
+                                <option value="Graduate">Graduate</option>
                             </select>
                         </div>
 
                         <div class="inputs">
                             <select class="dropdown __font08" name="Course" required="true"> 
                                 <option class="" value="">Select Course</option>
-                                <option class=""></option>
+                                <option value="MBA">MBA</option>
+                                <option value="MCA">MCA</option>
+                                <option value="PGDCA">PGDCA</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BCA">BCA</option>
                             </select>
                         </div>
 
@@ -87,25 +137,23 @@
 
         <section class="courses">
             <div class="coursesCont">
-                <div class="labels">
-                    <div class="label">
-                        <label for="mba" class="">MBA</label>
-                    </div>
-                    <div class="label">
-                        <label for="bba" class="">BBA</label>
-                    </div>
-                    <div class="label">
-                        <label for="mca" class="">MCA</label>
-                    </div>
-                    <div class="label">
-                        <label for="bca" class="">BCA</label>
-                    </div>
-                </div>
-
                 <input type="radio" checked name="radio" id="mba">
                 <input type="radio" name="radio" id="bba">
                 <input type="radio" name="radio" id="mca">
                 <input type="radio" name="radio" id="bca">
+
+                <div class="labels">
+                    
+                        <label for="mba" class="">MBA</label>
+                    
+                        <label for="bba" class="">BBA</label>
+                    
+                        <label for="mca" class="">MCA</label>
+                   
+                        <label for="bca" class="">BCA</label>
+                </div>
+
+                
 
                 <div class="slides">
                     <div class="slide mba">
@@ -124,10 +172,22 @@
                                 </div>
                                 <div class="text">
                                     <ul class="">
-                                        <li class="">Design performance monitoring and management system and develop financial & strategic objectives</li>
-                                        <li class="">Develop analytical frameworks to evaluate competitive business strategies</li>
-                                        <li class="">Formulate innovative strategies and action plans to address different business issues to achieve organization goals and objective by taking various internal and external factors into account</li>
-                                        <li class="">Integrate Corporate Social Responsibility (CSR) and sustainability in decision-making process</li>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Design performance monitoring and management system and develop financial & strategic objectives.</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Develope analytical frameworks to evaluate competitive business strategies.</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Formulate innovative strategies and action plans to address different business issues to achieve organization goals and objective by taking various internal and external factors into account.</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Integrate Corporate Social Responsibility (CSR) and sustainability in decision-making process.</li>
+                                        </div>
                                     </ul>
                                 </div>
                             </div>
@@ -152,7 +212,7 @@
                                             <p class="">Fee plan</p>
                                         </div>
                                         <div class="">
-                                            <p class=""> Lumpsum</p>
+                                            <p class="">Lumpsum</p>
                                         </div>
                                     </div>
                                     <div class="tableDetail">
@@ -160,24 +220,24 @@
                                             <div class="tableHead">
                                                 <p class="">Programme Fee</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> <span><i></i></span> </p>
+                                            <div class="">
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 1,04,400 </p>
                                             </div>
                                         </div>
                                         <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Fees Payable</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> </p>
+                                            <div class="">
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 86,400 </p>
                                             </div>
                                         </div>
                                         <div class="data">
                                             <div class="tableHead">
                                                 <p class="">You save</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class="">  </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20,400 </p>
                                             </div>
                                         </div>
                                     </div>
@@ -191,46 +251,45 @@
                                             <p class="">Programme Fee</p>
                                         </div>
                                     </div>
-                                    <div class="tableSub">
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 1</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 1</p>
                                         </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 2</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 3</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 4</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                        <div class="">
+                                            <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 20,400</p>
                                         </div>
                                     </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 2</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 18,000 </p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 3</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 18,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 18,000</p>
+                                        </div>
+                                    </div>
+                                    
                                     <div class="catagory">
                                         <div class="tableHead">
                                             <p class="">Total Fees</p>
                                         </div>
                                         <div class="tableHead">
-                                            <p class=""></p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 74400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -253,23 +312,41 @@
                                 </div>
                                 <div class="text">
                                     <ul class="">
-                                        <li class="">Develop conceptual and analytical skills in all functional areas of Management</li>
-                                        <li class="">Understanding of the strategic perceptions in the fast changing global scenario</li>
-                                        <li class=""></li>
-                                        <li class=""></li>
-                                        <li class=""></li>
-                                        <li class=""></li>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Develop conceptual and analytical skills in all functional areas of Management</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Understanding of the strategic perceptions in the fast changing global scenario</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Develop the ability to apply a multi-dimensional approach to overcome complex business problems</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">'Hands on’ Training with focus on ‘Learn by Doing’ Approach</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Acquire specific job related skills in their chosen area of specialization</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Groom overall personality and improve communication and oratory skills</li>
+                                        </div>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="eligibility">
                             <div class="title">
-                                <p class=""></p>
+                                <p class="">Eligibility</p>
                             </div>
                             <div class="text">
-                                <p class=""></p>
-                                <p class=""></p>
+                                <p class="">10+2 or its equivalent</p>
+                                <p class="">Duration: Minimum 3 years & Max 6 years</p>
                             </div>
                         </div>
                         <div class="fees">
@@ -278,90 +355,104 @@
                             </div>
                             <div class="table">
                                 <div class="oneTime">
-                                    <div class="">
+                                    <div class="catagory">
                                         <div class="tableHead">
                                             <p class="">Fee plan</p>
                                         </div>
-                                        <div class="tableSub">
-                                            <p class=""> Lumpsum</p>
+                                        <div class="">
+                                            <p class="">Lumpsum</p>
                                         </div>
                                     </div>
                                     <div class="tableDetail">
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Programme Fee</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> <span><i></i></span> </p>
+                                            <div class="">
+                                                <p class="">92400<span><i class="fas fa-rupee-sign"></i></span> </p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Fees Payable</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> </p>
+                                            <div class="">
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 7200</p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">You save</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class="">  </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20400</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="installments">
-                                    <div class="tableHead">
-                                        <div class="">
+                                    <div class="catagory">
+                                        <div class="tableHead ">
                                             <p class="">Fee Plan</p>
                                         </div>
-                                        <div class="">
+                                        <div class="tableHead">
                                             <p class="">Programme Fee</p>
                                         </div>
                                     </div>
-                                    <div class="tableSub">
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 1</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 1</p>
                                         </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 2</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 3</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 4</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                        <div class="">
+                                            <p class=""><sapn> <i class="fas fa-rupee-sign"></i></sapn> 26400</p>
                                         </div>
                                     </div>
-                                    <div class="tableHead">
+                                    <div class="installment">
                                         <div class="">
-                                            <p class="">Total Fees</p>
+                                            <p class="">Installment 2</p>
                                         </div>
                                         <div class="">
-                                            <p class=""></p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 3</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="catagory">
+                                        <div class="tableHead">
+                                            <p class="">Total Fees</p>
+                                        </div>
+                                        <div class="tableHead">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -372,28 +463,45 @@
                         <div class="top">
                             <div class="details">
                                 <div class="title">
-                                    <p class=""></p>
+                                    <p class="">Details</p>
                                 </div>
                                 <div class="text">
-                                    <p class=""></p>
+                                    <p class="">There is an increasing demand of qualified professionals in the field of Computer Science and Information Technology. MCA program by SGVU-DE is designed to help students become qualified professionals in this domain. It emphasizes on the application of softwares to solve scientific as well as commercial problems. The program provides thorough and sound background in theoretical and practical applications, including latest trends in software development. Master of Computer Applications is a dynamic course that provides foundation for research in core, emerging areas of this discipline.</p>
                                 </div>
                             </div>
                             <div class="objective">
                                 <div class="title">
-                                    <p class=""></p>
+                                    <p class="">Objective</p>
                                 </div>
                                 <div class="text">
-                                    <p class=""></p>
+                                    <ul class="">
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Lay sound foundation for conceptual understanding with insights into the intricacies of software and dynamic business environment</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Provide excellent theoretical and practical exposure to algorithm designing & optimization, programming, network & database management, mobile technologies and more</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Guide students with better knowledge of computer applications and develop programming skills along with managerial skills to help them meet the rising manpower demands of the global IT industry</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Equip students with emotional maturity, analytical ability, cross functional capability and skills to operate effectively in multicultural global business environment</li>
+                                        </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="eligibility">
                             <div class="title">
-                                <p class=""></p>
+                                <p class="">Eligibility</p>
                             </div>
                             <div class="text">
-                                <p class=""></p>
-                                <p class=""></p>
+                                <p class="">Passed with min 45% in B.Sc. with Mathematics or possessing technical degree e.g. B.Tech/ BE./ BCA/ Any Master Degree in any Subject</p>
+                                <p class="">Duration: Minimum 3 years & Max 6 years</p>
                             </div>
                         </div>
                         <div class="fees">
@@ -402,90 +510,105 @@
                             </div>
                             <div class="table">
                                 <div class="oneTime">
-                                    <div class="">
+                                    <div class="catagory">
                                         <div class="tableHead">
                                             <p class="">Fee plan</p>
                                         </div>
-                                        <div class="tableSub">
-                                            <p class=""> Lumpsum</p>
+                                        <div class="">
+                                            <p class="">Lumpsum</p>
                                         </div>
                                     </div>
                                     <div class="tableDetail">
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Programme Fee</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> <span><i></i></span> </p>
+                                            <div class="">
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 1,04,400 </p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Fees Payable</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> </p>
+                                            <div class="">
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 86,400 </p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">You save</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class="">  </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 18,000 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="installments">
-                                    <div class="tableHead">
-                                        <div class="">
+                                    <div class="catagory">
+                                        <div class="tableHead ">
                                             <p class="">Fee Plan</p>
                                         </div>
-                                        <div class="">
+                                        <div class="tableHead ">
                                             <p class="">Programme Fee</p>
                                         </div>
                                     </div>
-                                    <div class="tableSub">
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 1</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 1</p>
                                         </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 2</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 3</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 4</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                        <div class="">
+                                            <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 32,400</p>
                                         </div>
                                     </div>
-                                    <div class="tableHead">
+                                    <div class="installment">
                                         <div class="">
-                                            <p class="">Total Fees</p>
+                                            <p class="">Installment 2</p>
                                         </div>
                                         <div class="">
-                                            <p class=""></p>
+                                            <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 14,440 </p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 3</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 14,440</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 14,440</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 5</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 14,440</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 6</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 14,440</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="catagory">
+                                        <div class="tableHead">
+                                            <p class="">Total Fees</p>
+                                        </div>
+                                        <div class="tableHead">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 1,04,400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -496,28 +619,45 @@
                         <div class="top">
                             <div class="details">
                                 <div class="title">
-                                    <p class=""></p>
+                                    <p class="">Details</p>
                                 </div>
                                 <div class="text">
-                                    <p class=""></p>
+                                    <p class="">Bachelor of Computer Applications (BCA) is a 3 year graduation program in Computer Science. The course is designed to meet the growing demand for qualified professionals in the field of IT. The curriculum of BCA course offered by SGVU-DE caters to the need of different Software Houses in India and abroad and provides better opportunities for professionals in the IT Sector.</p>
                                 </div>
                             </div>
                             <div class="objective">
                                 <div class="title">
-                                    <p class=""></p>
+                                    <p class="">Objective</p>
                                 </div>
                                 <div class="text">
-                                    <p class=""></p>
+                                    <ul class="">
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Provide strong academic base with broad perspective for advanced career in computer application</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Develop students' professional competencies in computer systems for key functional areas along with design and implementation</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Develop competent professionals capable of addressing problems related to computer systems and its applications</li>
+                                        </div>
+                                        <div class="list">
+                                            <i class="fas fa-dot-circle"></i>
+                                            <li class="text">Conceptual grounding in computing with practical business application to develop entry level professionals suitable for ever increasing demands of IT sector</li>
+                                        </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="eligibility">
                             <div class="title">
-                                <p class=""></p>
+                                <p class="">Eligibility</p>
                             </div>
                             <div class="text">
-                                <p class=""></p>
-                                <p class=""></p>
+                                <p class="">10+2 Passed with 45% marks having Mathematics as one of the subject</p>
+                                <p class="">Duration: Minimum 3 years & Max 6 years</p>
                             </div>
                         </div>
                         <div class="fees">
@@ -526,90 +666,104 @@
                             </div>
                             <div class="table">
                                 <div class="oneTime">
-                                    <div class="">
+                                    <div class="catagory">
                                         <div class="tableHead">
                                             <p class="">Fee plan</p>
                                         </div>
-                                        <div class="tableSub">
-                                            <p class=""> Lumpsum</p>
+                                        <div class="">
+                                            <p class="">Lumpsum</p>
                                         </div>
                                     </div>
                                     <div class="tableDetail">
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Programme Fee</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> <span><i></i></span> </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400 </p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">Fees Payable</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class=""> </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 7200</p>
                                             </div>
                                         </div>
-                                        <div class="">
+                                        <div class="data">
                                             <div class="tableHead">
                                                 <p class="">You save</p>
                                             </div>
-                                            <div class="tableSub">
-                                                <p class="">  </p>
+                                            <div class="">
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20400</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="installments">
-                                    <div class="tableHead">
-                                        <div class="">
+                                    <div class="catagory">
+                                        <div class="tableHead ">
                                             <p class="">Fee Plan</p>
                                         </div>
-                                        <div class="">
+                                        <div class="tableHead ">
                                             <p class="">Programme Fee</p>
                                         </div>
                                     </div>
-                                    <div class="tableSub">
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 1</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 1</p>
                                         </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 2</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 3</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
-                                        </div>
-                                        <div class="installment">
-                                            <div class="">
-                                                <p class="">Installment 4</p>
-                                            </div>
-                                            <div class="">
-                                                <p class=""></p>
-                                            </div>
+                                        <div class="">
+                                            <p class=""><sapn><i class="fas fa-rupee-sign"></i> </sapn> 26400</p>
                                         </div>
                                     </div>
-                                    <div class="tableHead">
+                                    <div class="installment">
                                         <div class="">
-                                            <p class="">Total Fees</p>
+                                            <p class="">Installment 2</p>
                                         </div>
                                         <div class="">
-                                            <p class=""></p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 3</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="installment">
+                                        <div class="">
+                                            <p class="">Installment 4</p>
+                                        </div>
+                                        <div class="">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                        </div>
+                                    </div>
+                                    <div class="catagory">
+                                        <div class="tableHead">
+                                            <p class="">Total Fees</p>
+                                        </div>
+                                        <div class="tableHead">
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -621,12 +775,14 @@
         </section>
 
         <section class="apply"> 
-            <div class="head">
-                <div class="title">
-                    <p class="">How to Apply</p>
-                </div>
-                <div class="text">
-                    <p class="">Fill your details in the form below and we will get in touch with for more information on enrolling for the course or, call us on +91- 7385577774 to know more.</p>
+            <div class="applyCont">
+                <div class="head">
+                    <div class="title">
+                        <p class="">How to Apply</p>
+                    </div>
+                    <div class="text">
+                        <p class="">Fill your details in the form below and we will get in touch with for more information on enrolling for the course or, call us on +91- 7385577774 to know more.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -668,16 +824,30 @@
                     <div class="title">
                         <p class="">Suresh Gyan Vihar University has 23 Years of Education Legacy</p>
                     </div>
-                    <div class="text">
-                        <ul class="">
-                            <li class="">- Fuel your career growth with a Self Paced and Live & Interactive Digital Learning distance program from SGVU. Research shows higher education is directly linked to career growth for working professional. However due to limitation of time & cost most professionals remain away from this opportunity</li>
-                            <li class="">- Suresh Gyan Vihar University’s distance education programs - MBA, BBA, MCA, BCA are designed for working professional which provides students the convenience in learning without sacrificing career or time</li>
-                            <li class="">- These distance education programs are empowered by “Edusphere” to offer the students true anytime, anywhere learning experience with Live & Interactive Digital Learning and robust Student Support The course curriculum are designed to bridge the gap between academia and industry and thus leading a to sure career growth</li>
+                    <div class="">
+                        <ul class="lists">
+                            <div class="list">
+                                <i class="fas fa-dot-circle"></i>
+                                <li class="text"> Fuel your career growth with a Self Paced and Live & Interactive Digital Learning distance program from SGVU. Research shows higher education is directly linked to career growth for working professional. However due to limitation of time & cost most professionals remain away from this opportunity</li>
+                            </div>
+                            <div class="list">
+                                <i class="fas fa-dot-circle"></i>
+                                <li class="text">Suresh Gyan Vihar University’s distance education programs - MBA, BBA, MCA, BCA are designed for working professional which provides students the convenience in learning without sacrificing career or time</li>
+                            </div>
+                            <div class="list">
+                                <i class="fas fa-dot-circle"></i>
+                                <li class="text"> These distance education programs are empowered by “Edusphere” to offer the students true anytime, anywhere learning experience with Live & Interactive Digital Learning and robust Student Support The course curriculum are designed to bridge the gap between academia and industry and thus leading a to sure career growth</li>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <script type="text/javascript">
+            let state= []
+        </script>
 
     </body>
 </html>
