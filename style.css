@@ -41,7 +41,7 @@ input.input::placeholder {
 
 .inputs select.dropdown:invalid {
     color: #b3b3b3;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .head {
