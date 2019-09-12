@@ -140,9 +140,7 @@ function cityFilter() {
 						"state" : "West Bangale",
 						"city": ["Alipur Duar","Arambagh","Asansol","Ashoknagar Kalyangarh","Baharampur","Baidyabati","Baj Baj","Bally","Bally Cantonment","Balurghat","Bangaon","Bankra","Bankura","Bansbaria","Baranagar","Barddhaman","Basirhat","Bhadreswar","Bhatpara","Bidhannagar","Binnaguri","Bishnupur","Bolpur","Calcutta","Chakdaha","Champdani","Chandannagar","Contai","Dabgram","Darjiling","Dhulian","Dinhata","Dum Dum","Durgapur","Gangarampur","Garulia","Gayespur","Ghatal","Gopalpur","Habra","Halisahar","Haora","HugliChunchura","Ingraj Bazar","Islampur","Jalpaiguri","Jamuria","Jangipur","Jhargram","Kaliyaganj","Kalna","Kalyani","Kamarhati","Kanchrapara","Kandi","Karsiyang","Katwa","Kharagpur","Kharagpur Railway Settlement","Khardaha","Kharia","Koch Bihar","Konnagar","Krishnanagar","Kulti","Madhyamgram","Maheshtala","Memari","Midnapur","Naihati","Navadwip","Ni Barakpur","North Barakpur","North Dum Dum","Old Maldah","Panihati","Phulia","Pujali","Puruliya","Raiganj","Rajpur","Rampur Hat","Ranaghat","Raniganj","Rishra","Shantipur","Shiliguri","Shrirampur","Siuri","South Dum Dum","Titagarh","Ulubaria","UttarparaKotrung"]
 					}
-
 				];
-
 
 	let select = document.getElementById('cities');
 	let state = document.getElementById('states');

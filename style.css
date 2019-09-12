@@ -124,9 +124,11 @@ input.input::placeholder {
     font-weight: 700;
 }
 
-.coverCont .download.btns .btn {
+.cover .download.btns .btn {
     width: 40%;
     box-shadow: 2px 2px 2px #591e1e;
+    font-size: 15px;
+    padding: 12px 12px;
 }
 
 .coverCont .details {
@@ -193,7 +195,7 @@ select{
 	color: #3d3d3e;
 }
 
-.coverCont .btns .btn{
+.cover .btns .btn{
 	width: 100%;
     box-shadow: 2px 2px 7px 1px #b5b5b5;
     background: #e6395a;
@@ -204,11 +206,53 @@ select{
     border: 2px solid #e6395a;
 }
 
-.coverCont .btns .btn:hover {
+.cover .btns .btn:hover {
 	cursor: pointer;
     color: #e6395a;
     background-color: white;
     box-shadow: 3px 3px 9px 1px #b5b5b5;
+}
+
+
+.cover .overlay{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
+
+.cover .overlay .popupText {
+    position: relative;
+    background: white;
+    color: black;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 20p
+}
+
+.cover .overlay .close {
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 12px;
+}
+
+.cover .overlay .close a{
+	text-decoration: none;
+	    cursor: pointer;
 }
 
 .courses {

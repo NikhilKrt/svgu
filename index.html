@@ -41,9 +41,7 @@
                             <p class="">Best E-Campus by AICTE Chairman</p>
                         </div>
                     </div>
-                    <div class="download btns">
-                        <button class="btn">Download Brochure</button>
-                    </div>
+                   
                 </div>
                 <div class="cover-form">
                     <form class="form" id="form">
@@ -130,10 +128,21 @@
                         </div>
 
                         <div class="btns">
-                            <button class="btn">Submit</button>
+                            <button class="btn">Enquire</button>
                         </div>
 
                     </form>
+                </div>
+            </div>
+            <div class="overlay" id="form-message">
+                <div class="popupText">
+                    <p class="">Thank you for contacting us. <br> We will get back to you soon</p>
+                    <div class="close">
+                        <a class="close" onclick="popupclose()">&times;</a>
+                    </div>
+                     <div class="download btns">
+                        <button class="btn">Download Brochure</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -849,6 +858,26 @@
 
 
         <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript">
+            var x = '';
+            function submit(){
+                let url_string = window.location.href;
+                var url = new URL(url_string);
+                var content = url.searchParams.get("utm_platform");
+                let element = document.getElementById('form-message');
+                if(window.location.href.includes('?success=true')){
+                     element.style.display = 'grid';
+                }else if(content){
+                     let input = document.getElementById('source');
+                     input.value = content;
+                }
+            }
+
+            function popupclose(){
+                let element = document.getElementById('form-message');
+                element.style.display = 'none';
+            }
+        </script>
 
     </body>
 </html>
