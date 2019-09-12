@@ -237,7 +237,7 @@ select{
     justify-self: center;
     text-align: center;
     display: grid;
-    grid-row-gap: 20p
+    grid-row-gap: 20px;
 }
 
 .cover .overlay .close {
@@ -453,7 +453,7 @@ select{
 }
 
 .apply {
-    background:linear-gradient(to bottom, rgba(86, 86, 86, 0.87), rgba(86, 86, 86, 0.8)), url(img/apply.jpg);
+    background:linear-gradient(to bottom, rgba(86, 86, 86, 0.87), rgba(86, 86, 86, 0.8)), url(/svgu/img/apply.jpg);
     background-repeat: no-repeat;
     padding: 20px;
     background-size: cover;
