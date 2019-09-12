@@ -41,6 +41,9 @@
                             <p class="">Best E-Campus by AICTE Chairman</p>
                         </div>
                     </div>
+                    <div class="download btns">
+                        <button class="btn">Download Brochure</button>
+                    </div>
                 </div>
                 <div class="cover-form">
                     <form class="form" id="form">
@@ -61,49 +64,49 @@
                             <input class="input" name="Number"  pattern="[0-9]{10}"  type="text" placeholder="Phone Number*" required="true">
                         </div>
                         <div class="inputs">
-                            <select class="dropdown state" name="State" required="true"> 
-                                <option class="" value="">Select State</option>
-                                <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option><option value="Andhra Pradesh">Andhra Pradesh</option>
-                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                                <option value="Assam">Assam</option>
-                                <option value="Bihar">Bihar</option>
-                                <option value="Chandigarh">Chandigarh</option>
-                                <option value="Chhatisgarh">Chhatisgarh</option>
-                                <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
-                                <option value="Daman &amp; Diu">Daman &amp; Diu</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Goa">Goa</option>
-                                <option value="Gujarat">Gujarat</option>
-                                <option value="Haryana">Haryana</option>
-                                <option value="Himachal Pradesh">Himachal Pradesh</option>
-                                <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
-                                <option value="Jharkhand">Jharkhand</option>
-                                <option value="Karnataka">Karnataka</option>
-                                <option value="Kerala">Kerala</option>
-                                <option value="Lakshadweep">Lakshadweep</option>
-                                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                                <option value="Maharashtra">Maharashtra</option>
-                                <option value="Manipur">Manipur</option>
-                                <option value="Meghalaya">Meghalaya</option>
-                                <option value="Mizoram">Mizoram</option>
-                                <option value="Nagaland">Nagaland</option>
-                                <option value="Orissa">Orissa</option>
-                                <option value="Pondicherry">Pondicherry</option>
-                                <option value="Punjab">Punjab</option>
-                                <option value="Rajasthan">Rajasthan</option>
-                                <option value="Sikkim">Sikkim</option>
-                                <option value="Tamil Nadu">Tamil Nadu</option>
-                                <option value="Tripura">Tripura</option>
-                                <option value="Uttaranchal">Uttaranchal</option>
-                                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                <option value="West Bengal">West Bengal</option>
+                            <select class="dropdown state" id="states" onchange="cityFilter()" name="State" required="true"> 
+                                <option id="state" class="" value="">Select State</option>
+                                <option id="state" value="Andaman & Nicobar Islands">Andaman & Nicobar Islands</option>
+                                <option id="state" value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option id="state" value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option id="state" value="Assam">Assam</option>
+                                <option id="state" value="Bihar">Bihar</option>
+                                <option id="state" value="Chandigarh">Chandigarh</option>
+                                <option id="state" value="Chhatisgarh">Chhatisgarh</option>
+                                <option id="state" value="Dadra & Nagar Haveli">Dadra & Nagar Haveli</option>
+                                <option id="state" value="Daman & Diu">Daman & Diu</option>
+                                <option id="state" value="Delhi">Delhi</option>
+                                <option id="state" value="Goa">Goa</option>
+                                <option id="state" value="Gujarat">Gujarat</option>
+                                <option id="state" value="Haryana">Haryana</option>
+                                <option id="state" value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option id="state" value="Jammu & Kashmir">Jammu & Kashmir</option>
+                                <option id="state" value="Jharkhand">Jharkhand</option>
+                                <option id="state" value="Karnataka">Karnataka</option>
+                                <option id="state" value="Kerala">Kerala</option>
+                                <option id="state" value="Lakshadweep">Lakshadweep</option>
+                                <option id="state" value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option id="state" value="Maharashtra">Maharashtra</option>
+                                <option id="state" value="Manipur">Manipur</option>
+                                <option id="state" value="Meghalaya">Meghalaya</option>
+                                <option id="state" value="Mizoram">Mizoram</option>
+                                <option id="state" value="Nagaland">Nagaland</option>
+                                <option id="state" value="Orissa">Orissa</option>
+                                <option id="state" value="Pondicherry">Pondicherry</option>
+                                <option id="state" value="Punjab">Punjab</option>
+                                <option id="state" value="Rajasthan">Rajasthan</option>
+                                <option id="state" value="Sikkim">Sikkim</option>
+                                <option id="state" value="Tamil Nadu">Tamil Nadu</option>
+                                <option id="state" value="Tripura">Tripura</option>
+                                <option id="state" value="Uttaranchal">Uttaranchal</option>
+                                <option id="state" value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option id="state" value="West Bengal">West Bengal</option>
                             </select>
                         </div>
 
                         <div class="inputs">
-                            <select class="dropdown city" name="City" required="true"> 
+                            <select class="dropdown city" id="cities" name="City" required="true"> 
                                 <option class="" value="">Select City</option>
-                                <option class=""></option>
                             </select>
                         </div>
 
@@ -369,7 +372,7 @@
                                                 <p class="">Programme Fee</p>
                                             </div>
                                             <div class="">
-                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 92400</p>
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 92,400</p>
                                             </div>
                                         </div>
                                         <div class="data">
@@ -377,7 +380,7 @@
                                                 <p class="">Fees Payable</p>
                                             </div>
                                             <div class="">
-                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 7200</p>
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 72,00</p>
                                             </div>
                                         </div>
                                         <div class="data">
@@ -385,7 +388,7 @@
                                                 <p class="">You save</p>
                                             </div>
                                             <div class="">
-                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20400</p>
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20,400</p>
                                             </div>
                                         </div>
                                     </div>
@@ -404,7 +407,7 @@
                                             <p class="">Installment 1</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><sapn> <i class="fas fa-rupee-sign"></i></sapn> 26400</p>
+                                            <p class=""><sapn> <i class="fas fa-rupee-sign"></i></sapn> 26,400</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -412,7 +415,7 @@
                                             <p class="">Installment 2</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -420,7 +423,7 @@
                                             <p class="">Installment 3</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -428,7 +431,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -436,7 +439,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -444,7 +447,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="catagory">
@@ -452,7 +455,7 @@
                                             <p class="">Total Fees</p>
                                         </div>
                                         <div class="tableHead">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92,400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -680,7 +683,7 @@
                                                 <p class="">Programme Fee</p>
                                             </div>
                                             <div class="">
-                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400 </p>
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 92,400</p>
                                             </div>
                                         </div>
                                         <div class="data">
@@ -688,7 +691,7 @@
                                                 <p class="">Fees Payable</p>
                                             </div>
                                             <div class="">
-                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 7200</p>
+                                                <p class=""> <span><i class="fas fa-rupee-sign"></i></span> 72,00</p>
                                             </div>
                                         </div>
                                         <div class="data">
@@ -696,7 +699,7 @@
                                                 <p class="">You save</p>
                                             </div>
                                             <div class="">
-                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20400</p>
+                                                <p class=""><span><i class="fas fa-rupee-sign"></i></span> 20,400</p>
                                             </div>
                                         </div>
                                     </div>
@@ -706,7 +709,7 @@
                                         <div class="tableHead ">
                                             <p class="">Fee Plan</p>
                                         </div>
-                                        <div class="tableHead ">
+                                        <div class="tableHead">
                                             <p class="">Programme Fee</p>
                                         </div>
                                     </div>
@@ -715,7 +718,7 @@
                                             <p class="">Installment 1</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><sapn><i class="fas fa-rupee-sign"></i> </sapn> 26400</p>
+                                            <p class=""><sapn> <i class="fas fa-rupee-sign"></i></sapn> 26,400</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -723,7 +726,7 @@
                                             <p class="">Installment 2</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -731,7 +734,7 @@
                                             <p class="">Installment 3</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -739,7 +742,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -747,7 +750,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="installment">
@@ -755,7 +758,7 @@
                                             <p class="">Installment 4</p>
                                         </div>
                                         <div class="">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13200</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 13,200</p>
                                         </div>
                                     </div>
                                     <div class="catagory">
@@ -763,7 +766,7 @@
                                             <p class="">Total Fees</p>
                                         </div>
                                         <div class="tableHead">
-                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92400</p>
+                                            <p class=""><span><i class="fas fa-rupee-sign"></i></span> 92,400</p>
                                         </div>
                                     </div>
                                 </div>
@@ -845,9 +848,7 @@
         </section>
 
 
-        <script type="text/javascript">
-            let state= []
-        </script>
+        <script type="text/javascript" src="app.js"></script>
 
     </body>
 </html>
