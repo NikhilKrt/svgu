@@ -53,7 +53,7 @@ function cityFilter() {
 						"city": ["Ambala","Ambala Cantonment","Ambala Sadar","Bahadurgarh","Bhiwani","Charkhi Dadri","Dabwali","Faridabad","Gohana","Hisar","Jagadhri","Jind","Kaithal","Karnal","Narnaul","Narwana","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Thanesar","Tohana","Yamunanagar"]
 					},
 					{
-						"state" : "Himanchal Predesh",
+						"state" : "Himanchal Pradesh",
 						"city": ["Shimla"]
 					},
 					{
@@ -77,7 +77,7 @@ function cityFilter() {
 						"city": ["Lakshadweep"]
 					},
 					{
-						"state" : "Madhya Predesh",
+						"state" : "Madhya Pradesh",
 						"city": ["Ashoknagar","Balaghat","Basoda","Betul","Bhind","Bhopal","BinaEtawa","Burhanpur","Chhatarpur","Chhindwara","Dabra","Damoh","Datia","Dewas","Dhar","Gohad","Guna","Gwalior","Harda","Hoshangabad","Indore","Itarsi","Jabalpur","Jabalpur Cantonment","Jaora","Khandwa","Khargone","Mandidip","Mandsaur","Mau","Morena","Murwara","Nagda","Nimach","Pithampur","Raghogarh","Ratlam","Rewa","Sagar","Sarni","Satna","Sehore","Sendhwa","Seoni","Shahdol","Shajapur","Sheopur","Shivapuri","Sidhi","Singrauli","Tikamgarh","Ujjain","Vidisha"]
 					},
 					{
@@ -133,7 +133,7 @@ function cityFilter() {
 						"city": ["Dehra Dun","Dehra Dun Cantonment","Gola Range","Haldwani","Haridwar","Kashipur","Pithoragarh","Rishikesh","Rudrapur","Rurki"]
 					},
 					{
-						"state" : "Uttara Predesh",
+						"state" : "Uttara Pradesh",
 						"city": ["Agra","Aligarh","Allahabad","Amroha","Aonla","Auraiya","Ayodhya","Azamgarh","Baheri","Bahraich","Ballia","Balrampur","Banda","Baraut","Bareli","Basti","Behta Hajipur","Bela","Bhadohi","Bijnor","Bisalpur","Biswan","Budaun","Bulandshahr","Chandausi","Chandpur","Chhibramau","Chitrakut Dham","Dadri","Deoband","Deoria","Etah","Etawah","Faizabad","Faridpur","Farrukhabad","Fatehpur","Firozabad","Gajraula","Ganga Ghat","Gangoh","Ghaziabad","Ghazipur","Gola Gokarannath","Gonda","Gorakhpur","Hapur","Hardoi","Hasanpur","Hathras","Jahangirabad","Jalaun","Jaunpur","Jhansi","Kadi","Kairana","Kannauj","Kanpur","Kanpur Cantonment","Kasganj","Khatauli","Khora","Khurja","Kiratpur","Kosi Kalan","Laharpur","Lakhimpur","Lakhnau","Lakhnau Cantonment","Lalitpur","Loni","Mahoba","Mainpuri","Mathura","Mau","Mauranipur","Mawana","Mirat","Mirat Cantonment","Mirzapur","Modinagar","Moradabad","Mubarakpur","Mughal Sarai","Muradnagar","Muzaffarnagar","Nagina","Najibabad","Nawabganj","Noida","Obra","Orai","Pilibhit","Pilkhuwa","Rae Bareli","Ramgarh Nagla Kothi","Rampur","Rath","Renukut","Saharanpur","Sahaswan","Sambhal","Sandila","Shahabad","Shahjahanpur","Shamli","Sherkot","Shikohabad","Sikandarabad","Sitapur","Sukhmalpur Nizamabad","Sultanpur","Tanda","Tilhar","Tundla","Ujhani","Unnao","Varanasi","Vrindavan"]
 					},
 					{
