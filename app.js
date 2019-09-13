@@ -53,7 +53,7 @@ function cityFilter() {
 						"city": ["Ambala","Ambala Cantonment","Ambala Sadar","Bahadurgarh","Bhiwani","Charkhi Dadri","Dabwali","Faridabad","Gohana","Hisar","Jagadhri","Jind","Kaithal","Karnal","Narnaul","Narwana","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Thanesar","Tohana","Yamunanagar"]
 					},
 					{
-						"state" : "Himanchal Pradesh",
+						"state" : "Himachal Pradesh",
 						"city": ["Shimla"]
 					},
 					{
